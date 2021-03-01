@@ -1,0 +1,7 @@
+{
+  "emmet.preferences": {},
+  "emmet.includeLanguages": {
+    "njk": "html"
+  },
+  "emmet.triggerExpansionOnTab": true
+}

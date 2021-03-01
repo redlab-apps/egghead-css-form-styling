@@ -1,0 +1,58 @@
+---
+title: Field Descriptions
+---
+
+<fieldset>
+  <legend>Address</legend>
+  <div class="form-row">
+    <div class="form-group field-error">
+      <label for="street-address">Street Address</label>
+      <input type="text" class="form-field" id="street-address" name="street-address" aria-described-by="street-address-description"/>
+      <span id="street-address-description" class="field-description">Example: 123 Seasame Street, #456
+      </span>
+    </div>
+  </div>
+  <div class="form-row form-row--mixed">
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-field" id="city" name="city" />
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" class="form-field" id="state" name="state" />
+    </div>
+    <div class="form-group form-group--width-auto"
+        style="--field-width: 10ch;">
+      <label for="zip">Zip</label>
+      <input type="text" class="form-field" id="zip" name="zip" aria-described-by="zip-desciption" />
+      <span id="zip-description" class="field-description">5 digits</span>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="field-error">
+  <legend>Do you own or rent?</legend>
+  <div class="form-row form-row--variable">
+    <div class="form-group">
+      <label class="form-control radio">
+        <span class="form-control__input radio__input">
+          <input type="radio" value="own" name="property-ownership"
+            aria-described-by="property-ownership-description" />
+          <span class="input__control"> </span>
+        </span>
+        <span class="radio__label">Own</span>
+      </label>
+    </div>
+    <div class="form-group">
+      <label class="form-control radio">
+        <span class="form-control__input radio__input">
+          <input type="radio" value="rent" name="property-ownership" 
+            aria-described-by="property-ownership-description"/>
+          <span class="input__control"> </span>
+        </span>
+        <span class="radio__label">Rent</span>
+      </label>
+    </div>
+  </div>
+  <span class="field-description" id="property-ownership-description">A selection is required</span>
+</fieldset>
